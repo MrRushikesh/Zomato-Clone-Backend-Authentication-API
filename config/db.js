@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 
-const dbUrl = `mongodb://127.0.0.1:27017/zomato`;
+const dbUrl = `mongodb+srv://test:test@cluster0.kibua9i.mongodb.net/`;
 
 mongoose.connect(dbUrl)
 .then((res) => console.log("Database Connected Successfully..."))
