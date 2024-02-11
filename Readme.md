@@ -33,6 +33,8 @@ Developers should handle authentication tokens securely to prevent unauthorized 
 
 
 ### Register -: 
+- https://zomato-auth-api.onrender.com/api/auth/register
+
 - http://localhost:8500/api/auth/register
 
     {
@@ -43,6 +45,8 @@ Developers should handle authentication tokens securely to prevent unauthorized 
     }
 
 ### Login -: 
+- https://zomato-auth-api.onrender.com/api/auth/login
+
 - http://localhost:8500/api/auth/login
 
     {
@@ -52,8 +56,13 @@ Developers should handle authentication tokens securely to prevent unauthorized 
 
 
 ### Profile -: 
+- https://zomato-auth-api.onrender.com/api/auth/profile
+
 - http://localhost:8500/api/auth/profile
 
+
 ### Logout -: 
+- https://zomato-auth-api.onrender.com/api/auth/logout
+
 - http://localhost:8500/api/auth/logout
 

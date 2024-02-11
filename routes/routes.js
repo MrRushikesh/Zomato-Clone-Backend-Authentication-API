@@ -6,7 +6,7 @@ import {v4 as uuidv4} from 'uuid';
 
 const router = express.Router();
 
-
+// https://zomato-auth-api.onrender.com/api/auth/register
 // http://localhost:8500/api/auth/register
 router.post('/register', (req,res) => {
     const {username, email, phone, password} = req.body;
@@ -64,7 +64,7 @@ router.post('/register', (req,res) => {
     })
 })
 
-
+// https://zomato-auth-api.onrender.com/api/auth/login
 // http://localhost:8500/login
 router.post('/login', async(req,res) => {
     const {email, password} = req.body;
@@ -99,7 +99,7 @@ router.post('/login', async(req,res) => {
 
 })
 
-
+// https://zomato-auth-api.onrender.com/api/auth/profile
 // http://localhost:8500/api/auth/profile
 router.get('/profile', async(req, res) => {
     const token = req.cookies.token
@@ -110,7 +110,7 @@ router.get('/profile', async(req, res) => {
     }
 })
 
-
+// https://zomato-auth-api.onrender.com/api/auth/logout
 // http://localhost:8500/api/auth/logout
 router.get('/logout', async(req,res) => {
     res.clearCookie('token');
