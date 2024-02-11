@@ -1,0 +1,16 @@
+{
+  "name": "authentication-api",
+  "version": "1.0.0",
+  "description": "Zomato Backend Authentication API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "rushikesh ingale",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^8.1.1",
+    "nodemon": "^3.0.3"
+  }
+}
