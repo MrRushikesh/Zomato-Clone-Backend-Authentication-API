@@ -37,7 +37,7 @@ router.post('/register', (req,res) => {
                 .then((response) => {
                     //Genrating token 
                     const token = uuidv4();
-                    console.log(token);
+                    // console.log(token);
                     response.token = token;
                     response.save()
                     .then((updatedResponse) => {
@@ -83,7 +83,7 @@ router.post('/login', async(req,res) => {
             const matchResult = await bcrypt.compare(password, response.password);
             if(matchResult){
                 const token = uuidv4();
-                console.log(token);
+                // console.log(token);
                 response.token = token;
                 const updatedResponse = await response.save()
                 res.cookie('token',token);
